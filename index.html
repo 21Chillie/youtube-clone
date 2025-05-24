@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/video-list.css" />
+  </head>
+  <body>
+    <!-- Header/Main Navigation -->
+    <header>
+      <div class="logo-nav">
+        <span class="material-symbols-outlined"> menu </span>
+        <a class="youtube-logo" href="https://www.youtube.com">
+          <img src="./assets/icons/youtube-logo-white.svg" alt="Youtube logo" />
+        </a>
+        <a class="youtube-logo-small" href="https://www.youtube.com">
+          <img src="./assets/icons/youtube-icon-only.svg" alt="" />
+        </a>
+      </div>
+
+      <nav id="search-nav" aria-label="Main Navigation">
+        <form>
+          <input type="text" placeholder="Search" />
+          <div class="btn-search-container">
+            <button class="btn-search">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+            <div class="tooltips">
+              <p>Search</p>
+            </div>
+          </div>
+        </form>
+        <div class="icon-mic">
+          <span class="material-symbols-outlined icon-fill"> mic </span>
+          <div class="tooltips">
+            <p>Search with your voice</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="profile-nav">
+        <span class="material-symbols-outlined hide"> search </span>
+        <span class="material-symbols-outlined icon-fill hide"> mic </span>
+        <button class="btn-create">
+          <span class="material-symbols-outlined"> add </span>
+          <p>Create</p>
+        </button>
+        <div class="icon-notification">
+          <span class="material-symbols-outlined notification"> notifications </span>
+          <div class="notification-counts">
+            <p>9+</p>
+          </div>
+          <div class="tooltips">
+            <p>Notifications</p>
+          </div>
+        </div>
+        <img src="./assets/images/cat-photos-1.webp" alt="profile photos" />
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+      <nav class="sidebar-nav" aria-label="Sidebar Navigation">
+        <ul>
+          <li class="sidebar-nav-items">
+            <span class="material-symbols-outlined icon-fill"> home </span>
+            <p>Home</p>
+          </li>
+          <li class="sidebar-nav-items">
+            <img src="./assets/icons/youtube-shorts-icon.svg" alt="youtube shorts icon" />
+            <p>Shorts</p>
+          </li>
+          <li class="sidebar-nav-items">
+            <span class="material-symbols-outlined"> subscriptions </span>
+            <p>Subscriptions</p>
+          </li>
+          <li class="sidebar-nav-items">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <p>You</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Category Tags -->
+    <aside>
+      <div class="container-category-tags">
+        <div>
+          <ul>
+            <li class="category-tags">
+              <button class="btn-tags-active">All</button>
+            </li>
+            <li class="category-tags">
+              <button>Gaming</button>
+            </li>
+            <li class="category-tags">
+              <button>Steam</button>
+            </li>
+            <li class="category-tags">
+              <button>Music</button>
+            </li>
+            <li class="category-tags">
+              <button>Podcast</button>
+            </li>
+            <li class="category-tags">
+              <button>Sneaker Collecting</button>
+            </li>
+            <li class="category-tags">
+              <button>Mixes</button>
+            </li>
+            <li class="category-tags">
+              <button>CPU</button>
+            </li>
+            <li class="category-tags">
+              <button>NBA</button>
+            </li>
+            <li class="category-tags">
+              <button>Marvel Rivals</button>
+            </li>
+            <li class="category-tags">
+              <button>Coding</button>
+            </li>
+            <li class="category-tags">
+              <button>Indonesian Cuisine</button>
+            </li>
+            <li class="category-tags">
+              <button>Display Devices</button>
+            </li>
+            <li class="category-tags">
+              <button>Valorant</button>
+            </li>
+            <li class="category-tags">
+              <button>Electrical Engineering</button>
+            </li>
+            <li class="category-tags">
+              <button>Anime</button>
+            </li>
+          </ul>
+
+          <div class="btn-arrow">
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Video List -->
+    <main>
+      <section id="video-list" aria-label="video list">
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+
+        <article class="video-container">
+          <a href="https://www.youtube.com/watch?v=u4krxwWDlDM">
+            <figure>
+              <img class="video-thumbnail" src="./assets/images/thumbnails/ranton_thumbnail.webp" alt="youtube thumbnail" />
+            </figure>
+
+            <figcaption class="video-caption">
+              <div class="video-description">
+                <img class="channel-profile" src="./assets/images/channel picture/ranton_profile.webp" alt="channel profile" />
+                <div class="video-info">
+                  <h2 class="video-title">I Met Christian Bale In China</h2>
+                  <div>
+                    <div class="channel-name">
+                      <a href="https://www.youtube.com/@RealRantoni">Rantoni</a>
+                      <span class="material-symbols-outlined icon-fill"> check_circle </span>
+                    </div>
+                    <p class="video-stats">500K views &bull; 2 hours ago</p>
+                  </div>
+                </div>
+              </div>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </figcaption>
+          </a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

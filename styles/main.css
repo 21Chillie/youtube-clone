@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf");
+  font-style: normal;
+  font-weight: 100 900;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+@font-face {
+  font-family: "Roboto-Italic", sans-serif;
+  src: url("../assets/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf");
+  font-style: italic;
+  font-weight: 100 900;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-fill {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
+}
+
+/* Category Tags */
+.container-category-tags {
+  position: fixed;
+  left: 72px;
+  top: 56px;
+  right: 0;
+  z-index: 99;
+  background-color: #0f0f0f;
+  padding: 12px 24px 16px 24px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background-color: rgba(15, 15, 15, 0.85);
+}
+
+.container-category-tags > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container-category-tags > div > ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+}
+
+.category-tags button {
+  background-color: #272727;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.category-tags button:hover {
+  background-color: #3f3f3f;
+}
+
+.btn-tags-active {
+  background-color: #fff !important;
+  color: #0f0f0f !important;
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f0f;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+}
+
+.btn-arrow .material-symbols-outlined {
+  color: #fff;
+  font-size: 1.7rem;
+}
