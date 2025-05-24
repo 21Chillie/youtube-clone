@@ -27,10 +27,10 @@ A simple static **YouTube clone** built using only **HTML** and **CSS**. This pr
 
 ## 🌐 Live Demo
 
-[Click Here!](https://github.com/your-username)
+[Click Here!](https://21chillie.github.io/youtube-clone/)
 
 ## 📁 How to Use
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/youtube-clone.git
+   git clone https://github.com/21Chillie/youtube-clone.git
